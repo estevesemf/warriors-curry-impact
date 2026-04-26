@@ -1,0 +1,2 @@
+player_key,team_key,external_nba_id,external_balldontlie_id,first_name,last_name,position,draft_year,draft_round,draft_pick,active
+curry,gsw,201939,115,Stephen,Curry,Guard,2009,1,7,true

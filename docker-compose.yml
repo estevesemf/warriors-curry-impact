@@ -1,0 +1,51 @@
+services:
+  db:
+    image: postgres:17
+    container_name: warriors_postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-warriors}
+      POSTGRES_USER: ${POSTGRES_USER:-warriors}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-warriors}
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - warriors_pgdata:/var/lib/postgresql/data
+      - ./sql:/sql:ro
+      - ./sql/init:/docker-entrypoint-initdb.d:ro
+      - ./data:/data:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U warriors -d warriors"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  adminer:
+    image: adminer:latest
+    container_name: warriors_adminer
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8081:8080"
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: warriors_app
+    profiles:
+      - app
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_DATABASE: ${DB_DATABASE:-warriors}
+      DB_USERNAME: ${DB_USERNAME:-warriors}
+      DB_PASSWORD: ${DB_PASSWORD:-warriors}
+    ports:
+      - "${APP_PORT:-8080}:8080"
+
+volumes:
+  warriors_pgdata:

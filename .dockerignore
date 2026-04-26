@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.git
+.gitignore
+.DS_Store
+node_modules
+vendor
+storage
+coverage
+dist
+build
+*.log
+.phpunit.result.cache

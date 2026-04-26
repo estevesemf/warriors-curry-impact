@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+.codex
+docs/
+vendor/
+node_modules/
+storage/
+*.log
+coverage/
+dist/
+build/
+.phpunit.result.cache

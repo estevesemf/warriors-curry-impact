@@ -1,0 +1,5 @@
+season_label,period_label,ranking_type,rank,player_key,team_key,source_key
+2017-18,regular_season,jersey_player,1,curry,,nba_jersey_rankings
+2017-18,regular_season,team_merchandise,1,,gsw,nba_jersey_rankings
+2023-24,regular_season,jersey_player,1,curry,,nba_jersey_rankings
+2025-26,first_half,jersey_player,1,curry,,nba_jersey_rankings

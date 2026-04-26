@@ -1,0 +1,17 @@
+player_key,team_key,season_label,games,points_per_game,assists_per_game,rebounds_per_game,three_pm_per_game,three_pct,source_key
+curry,gsw,2009-10,80,17.5,5.9,4.5,2.1,0.437,basketball_reference_curry
+curry,gsw,2010-11,74,18.6,5.8,3.9,2.0,0.442,basketball_reference_curry
+curry,gsw,2011-12,26,14.7,5.3,3.4,2.1,0.455,basketball_reference_curry
+curry,gsw,2012-13,78,22.9,6.9,4.0,3.5,0.453,basketball_reference_curry
+curry,gsw,2013-14,78,24.0,8.5,4.3,3.3,0.424,basketball_reference_curry
+curry,gsw,2014-15,80,23.8,7.7,4.3,3.6,0.443,basketball_reference_curry
+curry,gsw,2015-16,79,30.1,6.7,5.4,5.1,0.454,basketball_reference_curry
+curry,gsw,2016-17,79,25.3,6.6,4.5,4.1,0.411,basketball_reference_curry
+curry,gsw,2017-18,51,26.4,6.1,5.1,4.2,0.423,basketball_reference_curry
+curry,gsw,2018-19,69,27.3,5.2,5.3,5.1,0.437,basketball_reference_curry
+curry,gsw,2019-20,5,20.8,6.6,5.2,2.4,0.245,basketball_reference_curry
+curry,gsw,2020-21,63,32.0,5.8,5.5,5.3,0.421,basketball_reference_curry
+curry,gsw,2021-22,64,25.5,6.3,5.2,4.5,0.380,basketball_reference_curry
+curry,gsw,2022-23,56,29.4,6.3,6.1,4.9,0.427,basketball_reference_curry
+curry,gsw,2023-24,74,26.4,5.1,4.5,4.8,0.408,basketball_reference_curry
+curry,gsw,2024-25,70,24.5,6.0,4.4,4.4,0.397,basketball_reference_curry

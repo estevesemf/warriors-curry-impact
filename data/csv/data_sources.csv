@@ -1,0 +1,9 @@
+source_key,name,url,publisher,access_type,license_notes,retrieved_at
+wikipedia_warriors_seasons,List of Golden State Warriors seasons,https://en.wikipedia.org/wiki/List_of_Golden_State_Warriors_seasons,Wikipedia,manual_csv,Public reference page used for the learning dataset,2026-04-24
+basketball_reference_warriors,Golden State Warriors Basketball Reference,https://www.basketball-reference.com/teams/GSW/,Sports Reference,manual_csv,Reference only and no scraping automation,2026-04-24
+basketball_reference_curry,Stephen Curry Basketball Reference,https://www.basketball-reference.com/players/c/curryst01.html,Sports Reference,manual_csv,Reference only and no scraping automation,2026-04-24
+nba_curry_profile,Stephen Curry NBA Stats,https://www.nba.com/stats/player/201939/career,NBA,manual_csv,Official profile and career stats,2026-04-24
+forbes_warriors,Forbes Golden State Warriors valuation,https://www.forbes.com/teams/golden-state-warriors/,Forbes,manual_entry,Estimated business metrics,2026-04-24
+cnbc_valuation,CNBC NBA Team Valuations 2025,https://www.cnbc.com/2025/02/14/cnbcs-official-nba-team-valuations-2025.html,CNBC,manual_entry,Estimated business metrics,2026-04-24
+nba_jersey_rankings,NBA top selling jerseys,https://www.nba.com/news/top-selling-jerseys-2023-24-season-2,NBA,manual_entry,Rankings only and not unit sales,2026-04-24
+espn_press_room,ESPN Press Room NBA Finals 2017,https://espnpressroom.com/us/press-releases/2017/06/2017-nba-finals-abc-watched-since-1998/,ESPN,manual_entry,Audience release,2026-04-24

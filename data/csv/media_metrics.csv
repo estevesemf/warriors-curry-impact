@@ -1,0 +1,3 @@
+entity_name,season_label,metric_name,metric_value,unit,period_start,period_end,source_key
+NBA Finals 2017,2016-17,tv_avg_viewers,20400000,viewers,2017-06-01,2017-06-12,espn_press_room
+Golden State Warriors,2023-24,revenue,781,USD_MILLION,2023-10-24,2024-06-17,cnbc_valuation
