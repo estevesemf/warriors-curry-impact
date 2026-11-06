@@ -33,6 +33,13 @@ final class Database
             $dsn .= ';sslmode=' . $config['sslmode'];
         }
 
+        // O Neon identifica o banco pelo nome do servidor (SNI). Versões antigas da libpq não mandam
+        // esse nome, então passamos o identificador também nas opções da conexão.
+        if (str_ends_with($config['host'], '.neon.tech')) {
+            $endpoint = str_replace('-pooler', '', explode('.', $config['host'])[0]);
+            $dsn .= ";options='endpoint=" . $endpoint . "'";
+        }
+
         return new PDO($dsn, $config['username'], $config['password'], [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
