@@ -19,7 +19,7 @@ if ($path === '/api/dashboard') {
             JSON_THROW_ON_ERROR
         );
     } catch (Throwable $exception) {
-        error_log($exception);
+        error_log((string) $exception);
         http_response_code(500);
         echo json_encode([
             'error' => 'database_unavailable',
