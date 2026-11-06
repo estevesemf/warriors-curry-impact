@@ -42,7 +42,7 @@ function sendSecurityHeaders(): void
     header('X-Content-Type-Options: nosniff');
     header('Referrer-Policy: strict-origin-when-cross-origin');
     header('Permissions-Policy: camera=(), geolocation=(), microphone=()');
-    header("Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https://commons.wikimedia.org https://upload.wikimedia.org https://s2-ge.glbimg.com https://i.s3.glbimg.com https://conteudo.imguol.com.br https://p2.trrsf.com; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'");
+    header("Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https://commons.wikimedia.org https://upload.wikimedia.org https://thumb.wikimedia.org https://s2-ge.glbimg.com https://i.s3.glbimg.com https://conteudo.imguol.com.br https://p2.trrsf.com; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'");
 }
 ?>
 <!doctype html>
